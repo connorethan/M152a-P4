@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/29/2024 02:54:36 PM
+// Create Date: 03/02/2024 03:59:26 PM
 // Design Name: 
-// Module Name: pong
+// Module Name: clock60hz
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,23 +20,25 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module pong(
+module clock60hz(
     input clk,
-    input rst,
-    input data,
-    output latch,
-    output nes_clk,
-    output [7:0] led
+    output reg enable  
 );
 
-nes_controller controller(
-    .clk(clk),
-    .data(data),
-    .reset(rst),
-    .latch(latch),
-    .nes_clk(nes_clk),
-    .abssudlr(led)
-    
-);
+
+reg [26:0] counter = 0;  
+parameter DIVIDE_BY = 100_000_000 / 60;
+
+always @(posedge clk) begin
+    if(counter >= DIVIDE_BY) begin
+        counter <= 0;
+        enable <= 1;  
+    end
+    else begin
+        counter <= counter + 1;
+        enable <= 0;
+    end
+end
 
 endmodule
+
