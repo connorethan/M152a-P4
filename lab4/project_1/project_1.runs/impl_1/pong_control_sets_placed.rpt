@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Mar  2 21:47:49 2024
+| Date         : Sun Mar  3 00:53:20 2024
 | Host         : LAPTOP-ERO4GF0R running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file pong_control_sets_placed.rpt
 | Design       : pong
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    13 |
-| Unused register locations in slices containing registers |    66 |
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    68 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,7 +35,6 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      2 |           10 |
-|     14 |            1 |
 |    16+ |            2 |
 +--------+--------------+
 
@@ -46,34 +45,33 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              30 |            8 |
+| No           | No                    | No                     |              34 |           10 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              54 |            7 |
 | Yes          | No                    | No                     |              20 |           10 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              14 |            3 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+------------------------------------------+----------------------------------------+------------------+----------------+
-|  Clock Signal  |               Enable Signal              |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
-+----------------+------------------------------------------+----------------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG | controller/clk60hz/E[0]                  |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/E[4]                  |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/E[1]                  |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/E[7]                  |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/latch_reg             |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/E[2]                  |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/nes_clk_reg           |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/E[5]                  |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/E[3]                  |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/E[6]                  |                                        |                1 |              2 |
-|  clk_IBUF_BUFG | controller/clk60hz/button_index_reg[0]_0 | controller/clk60hz/button_index_reg[0] |                3 |             14 |
-|  clk_IBUF_BUFG |                                          |                                        |                8 |             30 |
-|  clk_IBUF_BUFG |                                          | controller/clk60hz/clear               |                7 |             54 |
-+----------------+------------------------------------------+----------------------------------------+------------------+----------------+
++----------------+----------------------------------+--------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal          |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------+----------------------------------+--------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | controller/abssudlr[0]_i_1_n_0   |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/abssudlr[1]_i_1_n_0   |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/abssudlr[2]_i_1_n_0   |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/abssudlr[3]_i_1_n_0   |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/clk60hz/nes_clk_reg_0 |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/abssudlr[5]_i_1_n_0   |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/abssudlr[6]_i_1_n_0   |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/abssudlr[4]_i_1_n_0   |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/abssudlr[7]_i_1_n_0   |                          |                1 |              2 |
+|  clk_IBUF_BUFG | controller/latch_i_1_n_0         |                          |                1 |              2 |
+|  clk_IBUF_BUFG |                                  |                          |               10 |             34 |
+|  clk_IBUF_BUFG |                                  | controller/clk60hz/clear |                7 |             54 |
++----------------+----------------------------------+--------------------------+------------------+----------------+
 
 

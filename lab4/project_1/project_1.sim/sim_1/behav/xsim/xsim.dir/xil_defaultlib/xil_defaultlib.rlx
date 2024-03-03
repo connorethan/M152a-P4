@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/drkiw/Desktop/M152a-P4/lab4/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/drkiw/Desktop/M152a-P4/lab4/project_1/project_1.srcs/sim_1/new/controller_tb.v,1709452555,verilog,,,,controller_tb,,,,,,,,
+C:/Users/drkiw/Desktop/M152a-P4/lab4/project_1/project_1.srcs/sources_1/new/clock60hz.v,1709454669,verilog,,C:/Users/drkiw/Desktop/M152a-P4/lab4/project_1/project_1.srcs/sources_1/new/controller.v,,clock60hz,,,,,,,,
+C:/Users/drkiw/Desktop/M152a-P4/lab4/project_1/project_1.srcs/sources_1/new/controller.v,1709455720,verilog,,C:/Users/drkiw/Desktop/M152a-P4/lab4/project_1/project_1.srcs/sim_1/new/controller_tb.v,,nes_controller,,,,,,,,
+C:/Users/drkiw/Desktop/M152a-P4/lab4/project_1/project_1.srcs/sources_1/new/pong.v,1709447726,verilog,,,,pong,,,,,,,,

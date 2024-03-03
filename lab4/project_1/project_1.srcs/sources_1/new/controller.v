@@ -1,11 +1,12 @@
 `timescale 1ns / 1ps
 
 module nes_controller(
-    input wire clk, reset, 
+    input wire clk, 
     input wire data,                                        // input data from nes controller to FPGA
-    output reg latch, nes_clk,                              // outputs from FPGA to nes controller
-    output reg [7:0] abssudlr
+    output reg latch = 0, nes_clk = 0,                              // outputs from FPGA to nes controller
+    output reg [7:0] abssudlr = 8'b0
 );
+
     wire clockEnable;
     clock60hz clk60hz(clk, clockEnable);
     // states
@@ -14,17 +15,17 @@ module nes_controller(
              read_data = 4'h1,
              null_state = 4'h2;
     localparam
-            clk12us = 100_000_000 / 1_000_000 * 12,
-            clk6us = clk12us / 8'd2;  
+            clk12us = 1200,
+            clk6us = clk12us / 2;  
              
     reg [10:0] count = 0;
     
-    reg [3:0] state = latch_en; 
+    reg [3:0] state = null_state; 
     reg [7:0] button_index = 8'd0;
             
  
     always @(posedge clk) begin
-        if (clockEnable) begin
+        if (clockEnable && (state == null_state)) begin
             state = latch_en;
             count = 0;
         end
@@ -33,9 +34,11 @@ module nes_controller(
             latch_en: begin
                 if(count >= clk12us) begin
                     latch = 0;
-                    count = 0;
-                    button_index = 8'd0;
-                    state = read_data;
+                    if (count >= clk12us + clk6us) begin
+                        count = 0;
+                        button_index = 8'd1;
+                        state = read_data;
+                    end else count = count + 1;
                 end else begin
                     latch = 1;
                     count = count + 1;

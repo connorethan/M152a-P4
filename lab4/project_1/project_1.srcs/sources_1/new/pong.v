@@ -22,7 +22,6 @@
 
 module pong(
     input clk,
-    input rst,
     input data,
     output latch,
     output nes_clk,
@@ -32,7 +31,6 @@ module pong(
 nes_controller controller(
     .clk(clk),
     .data(data),
-    .reset(rst),
     .latch(latch),
     .nes_clk(nes_clk),
     .abssudlr(led)

@@ -26,7 +26,7 @@ module clock60hz(
 );
 
 
-reg [26:0] counter = 0;  
+reg [26:0] counter = 0; 
 parameter DIVIDE_BY = 100_000_000 / 60;
 
 always @(posedge clk) begin
