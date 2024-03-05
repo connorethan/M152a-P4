@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/29/2024 02:54:36 PM
+// Create Date: 03/03/2024 06:26:22 PM
 // Design Name: 
-// Module Name: pong
+// Module Name: game_logic
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,25 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module pong(
-    input clk,
-    input reset,
-    input data,
-    output [15:0] led
-);
+module game_logic(
 
-controller nes(
-    .clk(clk),
-    .reset(reset),
-    .data(data),
-    .A(led[0]),
-    .B(),
-    .select(),
-    .start(),
-    .up(),
-    .down(),
-    .left(),
-    .right()
-);
-
+    );
 endmodule
