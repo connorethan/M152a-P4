@@ -22,23 +22,19 @@
 
 module pong(
     input clk,
-    input reset,
     input data,
-    output [15:0] led
+    output latch,
+    output nes_clk,
+    output [7:0] led
 );
 
-controller nes(
+nes_controller controller(
     .clk(clk),
-    .reset(reset),
     .data(data),
-    .A(led[0]),
-    .B(),
-    .select(),
-    .start(),
-    .up(),
-    .down(),
-    .left(),
-    .right()
+    .latch(latch),
+    .nes_clk(nes_clk),
+    .abssudlr(led)
+    
 );
 
 endmodule
