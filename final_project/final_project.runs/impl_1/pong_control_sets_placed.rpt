@@ -1,0 +1,83 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Mar  5 16:25:00 2024
+| Host         : CS152A-12 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pong_control_sets_placed.rpt
+| Design       : pong
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    74 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           10 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             120 |           30 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             202 |           26 |
+| Yes          | No                    | No                     |             148 |           26 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------------------+------------------------------+------------------+----------------+
+|   Clock Signal   |           Enable Signal          |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++------------------+----------------------------------+------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG   | controller/abssudlr[0]_i_1_n_0   |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/abssudlr[1]_i_1_n_0   |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/abssudlr[3]_i_1_n_0   |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/abssudlr[4]_i_1_n_0   |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/abssudlr[5]_i_1_n_0   |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/abssudlr[6]_i_1_n_0   |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/abssudlr[2]_i_1_n_0   |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/abssudlr[7]_i_1_n_0   |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/clk60hz/nes_clk_reg_0 |                              |                1 |              2 |
+|  clk_IBUF_BUFG   | controller/latch_i_1_n_0         |                              |                1 |              2 |
+|  RED_reg_i_2_n_0 |                                  | display/hPos[0]_i_1_n_0      |                4 |             32 |
+|  RED_reg_i_2_n_0 | display/hPos[0]_i_1_n_0          | display/vPos                 |                4 |             32 |
+|  clk_IBUF_BUFG   |                                  |                              |               16 |             46 |
+|  clk_IBUF_BUFG   |                                  | pixel_clk_div/enable_i_1_n_0 |                7 |             54 |
+|  clk_IBUF_BUFG   |                                  | controller/clk60hz/clear     |                7 |             54 |
+|  clk_IBUF_BUFG   |                                  | game/ballX                   |                8 |             62 |
+|  RED_reg_i_2_n_0 |                                  |                              |               14 |             74 |
+|  clk_IBUF_BUFG   | game/ballX                       |                              |               16 |            128 |
++------------------+----------------------------------+------------------------------+------------------+----------------+
+
+
