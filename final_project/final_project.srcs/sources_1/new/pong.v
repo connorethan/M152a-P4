@@ -33,6 +33,22 @@ module pong(
     output green
 );
 
+localparam [104:0] 
+    pixel_score_map = 
+        {
+            15'b111_101_101_101_111,
+            15'b011_010_010_111_111,
+            15'b111_001_010_100_111,
+            15'b111_100_111_100_111,
+            15'b101_101_111_001_001,
+            15'b111_010_111_001_111,
+            15'b111_100_111_101_111
+        },
+     p1_starting_x = 106,
+     width = 3,
+     p1_starting_y = 80,
+     height = 5;
+
 nes_controller controller(
     .clk(clk),
     .data(data),
@@ -41,15 +57,18 @@ nes_controller controller(
     .abssudlr(led)  
 );
 
-wire [31:0] ball_x, ball_y, paddle_x, paddle_y;
+wire [31:0] ball_x, ball_y, paddle_x, paddle_y, digit_index;
 game_logic game(
     .gameclk(clk),
     .button(led),
     .ball_x(ball_x),
     .ball_y(ball_y),
     .paddle_x(paddle_x),
-    .paddle_y(paddle_y)
+    .paddle_y(paddle_y),
+    .digit_index(digit_index)
 );
+
+
 
 wire pixel_clk;
 clock25mhz pixel_clk_div(
@@ -69,7 +88,14 @@ wire paddle_px = (
    paddle_x - 10 <= scx && scx <= paddle_x &&
    paddle_y <= scy && scy <= paddle_y + 50);
 
-wire[2:0] pixel = (ball_px || paddle_px) ? white : black;
+wire score_px = (
+    scx >= p1_starting_x && scx < p1_starting_x + width && 
+    scy >= p1_starting_y && scy < p1_starting_y + height &&
+    pixel_score_map[digit_index * 15 + (scx - p1_starting_x) + (scy - p1_starting_y) * 3]
+);
+
+wire[2:0] pixel = (ball_px || paddle_px || pixel_score_map) ? white : black;
+
 
 Vga display(
     .pixelClock(pixel_clk),
