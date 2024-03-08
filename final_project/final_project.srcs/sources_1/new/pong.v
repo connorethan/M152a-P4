@@ -36,20 +36,12 @@ module pong(
 );
 
 localparam [104:0] 
-    pixel_score_map = 
-        {
-            15'b111_101_101_101_111,
-            15'b011_010_010_111_111,
-            15'b111_001_010_100_111,
-            15'b111_100_111_100_111,
-            15'b101_101_111_001_001,
-            15'b111_010_111_001_111,
-            15'b111_100_111_101_111
-        },
      p1_starting_x = 106,
-     width = 3,
-     p1_starting_y = 80,
-     height = 5;
+     p1_starting_y = 80;
+
+reg [79:0] pixel_map;
+reg [3:0] width;
+reg [3:0] height;
      
 nes_controller controller(
     .clk(clk),
@@ -80,6 +72,13 @@ clock25mhz pixel_clk_div(
     .enable(pixel_clk)
 );
 
+digital_pixel_map digital_pixel_map(
+    .digit_index(digit_index),
+    .pixel_map(pixel_map),
+    .width(width),
+    .height(height)
+);
+
 reg [2:0] white = 3'b111;
 reg [2:0] black = 3'b000;
 
@@ -95,7 +94,7 @@ wire paddle_px = (
 wire score_px = (
     scx >= p1_starting_x && scx < p1_starting_x + width && 
     scy >= p1_starting_y && scy < p1_starting_y + height &&
-    pixel_score_map[digit_index * 15 + (scx - p1_starting_x) + (scy - p1_starting_y) * 3]
+    pixel_map[(scx - p1_starting_x) + (scy - p1_starting_y) * 8]
 );
 
 wire[2:0] pixel = (ball_px || paddle_px || score_px) ? white : black;
