@@ -39,9 +39,9 @@ localparam [104:0]
      p1_starting_x = 106,
      p1_starting_y = 80;
 
-reg [79:0] pixel_map;
-reg [3:0] width;
-reg [3:0] height;
+wire [0:79] pixel_map;
+wire [3:0] width;
+wire [3:0] height;
      
 nes_controller controller(
     .clk(clk),
@@ -72,7 +72,7 @@ clock25mhz pixel_clk_div(
     .enable(pixel_clk)
 );
 
-digital_pixel_map digital_pixel_map(
+digit_pixel_map digit_pixel_map(
     .digit_index(digit_index),
     .pixel_map(pixel_map),
     .width(width),
