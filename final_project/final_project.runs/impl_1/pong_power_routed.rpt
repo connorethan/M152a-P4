@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Fri Mar  8 17:21:01 2024
+| Date             : Fri Mar  8 17:44:08 2024
 | Host             : CS152A-12 running 64-bit major release  (build 9200)
 | Command          : report_power -file pong_power_routed.rpt -pb pong_power_summary_routed.pb -rpx pong_power_routed.rpx
 | Design           : pong
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 54.621 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 46.647 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 54.135                           |
+| Dynamic (W)              | 46.161                           |
 | Device Static (W)        | 0.486                            |
 | Effective TJA (C/W)      | 5.0                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |    26.761 |     3308 |       --- |             --- |
-|   LUT as Logic |    24.384 |     1890 |     20800 |            9.09 |
-|   CARRY4       |     2.269 |      464 |      8150 |            5.69 |
-|   Register     |     0.102 |      407 |     41600 |            0.98 |
+| Slice Logic    |    24.305 |     3739 |       --- |             --- |
+|   LUT as Logic |    22.059 |     2192 |     20800 |           10.54 |
+|   CARRY4       |     2.190 |      487 |      8150 |            5.98 |
+|   Register     |     0.050 |      379 |     41600 |            0.91 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
+|   F7/F8 Muxes  |    <0.001 |        3 |     32600 |           <0.01 |
 |   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    26.744 |     2676 |       --- |             --- |
-| I/O            |     0.630 |       19 |       106 |           17.92 |
+| Signals        |    21.223 |     2944 |       --- |             --- |
+| I/O            |     0.633 |       19 |       106 |           17.92 |
 | Static Power   |     0.486 |          |           |                 |
-| Total          |    54.621 |          |           |                 |
+| Total          |    46.647 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    53.862 |      53.521 |      0.341 |
+| Vccint    |       1.000 |    45.884 |      45.544 |      0.341 |
 | Vccaux    |       1.800 |     0.076 |       0.023 |      0.053 |
-| Vcco33    |       3.300 |     0.175 |       0.174 |      0.001 |
+| Vcco33    |       3.300 |     0.176 |       0.175 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,11 +139,11 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| pong            |    54.135 |
-|   controller    |     0.267 |
-|     clk60hz     |     0.063 |
-|   display       |     1.024 |
-|   game          |    52.128 |
+| pong            |    46.161 |
+|   controller    |     0.286 |
+|     clk60hz     |     0.057 |
+|   display       |     1.137 |
+|   game          |    43.944 |
 |   pixel_clk_div |     0.015 |
 +-----------------+-----------+
 

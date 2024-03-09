@@ -52,20 +52,24 @@ nes_controller controller(
 );
 
 wire [31:0] ball_x, ball_y;
-wire [31:0] paddle_x, paddle_top, paddle_bottom;
+wire [31:0] paddle1_x, paddle1_top, paddle1_bottom;
+wire [31:0] paddle2_x, paddle2_top, paddle2_bottom;
 wire [31:0] digit_index;
+
 game_logic game(
     .gameclk(clk),
     .btn_down(btn_down),
     .btn_up(btn_up),
     .ball_x(ball_x),
     .ball_y(ball_y),
-    .paddle_x(paddle_x),
-    .paddle_top(paddle_top),
-    .paddle_bottom(paddle_bottom),
+    .paddle1_x(paddle1_x),
+    .paddle1_top(paddle1_top),
+    .paddle1_bottom(paddle1_bottom),
+    .paddle2_x(paddle2_x),
+    .paddle2_top(paddle2_top),
+    .paddle2_bottom(paddle2_bottom),
     .digit_index(digit_index)
 );
-
 wire pixel_clk;
 clock25mhz pixel_clk_div(
     .clk(clk),
@@ -87,9 +91,14 @@ wire [15:0] scx, scy;
 wire ball_px = (
     ball_x - 5 <= scx && scx <= ball_x + 5 &&
     ball_y - 5 <= scy && scy <= ball_y + 5);
-wire paddle_px = (
-   paddle_x - 10 <= scx && scx <= paddle_x &&
-   paddle_top <= scy && scy <= paddle_top + 50);
+wire paddle1_px = (
+        paddle1_x - 10 <= scx && scx <= paddle1_x &&
+        paddle1_top <= scy && scy <= paddle1_top + 50);
+    
+wire paddle2_px = (
+        paddle2_x <= scx && scx <= paddle2_x + 10 &&
+        paddle2_top <= scy && scy <= paddle2_top + 50);
+    
 
 // Score display parameters
 localparam SCORE_SCALE = 4; // Adjust this value to change the score size
@@ -102,7 +111,7 @@ wire score_px = (
     pixel_map[((scx - p1_starting_x) / SCORE_SCALE) + ((scy - p1_starting_y) / SCORE_SCALE) * 8]
 );
 
-wire[2:0] pixel = (ball_px || paddle_px || score_px) ? white : black;
+wire[2:0] pixel = (ball_px || paddle1_px || paddle2_px || score_px) ? white : black;
 
 Vga display(
     .pixelClock(pixel_clk),
