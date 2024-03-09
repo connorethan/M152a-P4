@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/29/2024 02:54:36 PM
-// Design Name: 
-// Module Name: pong
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module pong(
     input clk,
@@ -35,26 +15,23 @@ module pong(
     output green
 );
 
-localparam [104:0] 
-     p1_starting_x = 160,
-     p1_starting_y = 40;
-
 wire [0:79] pixel_map;
+wire [0:79] pixel_map2;
 wire [3:0] width;
 wire [3:0] height;
-     
+
 nes_controller controller(
     .clk(clk),
     .data(data),
     .latch(latch),
     .nes_clk(nes_clk),
-    .abssudlr(led)  
+    .abssudlr(led)
 );
 
 wire [31:0] ball_x, ball_y;
 wire [31:0] paddle1_x, paddle1_top, paddle1_bottom;
 wire [31:0] paddle2_x, paddle2_top, paddle2_bottom;
-wire [31:0] digit_index;
+wire [31:0] digit_index1, digit_index2;
 
 game_logic game(
     .gameclk(clk),
@@ -68,19 +45,38 @@ game_logic game(
     .paddle2_x(paddle2_x),
     .paddle2_top(paddle2_top),
     .paddle2_bottom(paddle2_bottom),
-    .digit_index(digit_index)
+    .digit_index1(digit_index1),
+    .digit_index2(digit_index2)
 );
+
 wire pixel_clk;
 clock25mhz pixel_clk_div(
     .clk(clk),
     .enable(pixel_clk)
 );
 
+// Score display parameters
+localparam SCORE_SCALE = 4; // Adjust this value to change the score size
+wire [31:0] SCORE_WIDTH = width * SCORE_SCALE;
+wire [31:0] SCORE_HEIGHT = height * SCORE_SCALE;
+
+localparam [104:0]
+    p1_starting_x = 106,
+    p1_starting_y = 80,
+    p2_starting_x = 530;  // Adjust the starting x-coordinate for paddle 2's score
+
 digit_pixel_map digit_pixel_map(
-    .digit_index(digit_index),
+    .digit_index(digit_index1),
     .pixel_map(pixel_map),
     .width(width),
     .height(height)
+);
+
+digit_pixel_map digit_pixel_map2(
+    .digit_index(digit_index2),
+    .pixel_map(pixel_map2),
+    .width(),
+    .height()
 );
 
 reg [2:0] white = 3'b111;
@@ -91,27 +87,28 @@ wire [15:0] scx, scy;
 wire ball_px = (
     ball_x - 5 <= scx && scx <= ball_x + 5 &&
     ball_y - 5 <= scy && scy <= ball_y + 5);
+
 wire paddle1_px = (
-        paddle1_x - 10 <= scx && scx <= paddle1_x &&
-        paddle1_top <= scy && scy <= paddle1_top + 50);
-    
+    paddle1_x - 10 <= scx && scx <= paddle1_x &&
+    paddle1_top <= scy && scy <= paddle1_top + 50);
+
 wire paddle2_px = (
-        paddle2_x <= scx && scx <= paddle2_x + 10 &&
-        paddle2_top <= scy && scy <= paddle2_top + 50);
-    
+    paddle2_x <= scx && scx <= paddle2_x + 10 &&
+    paddle2_top <= scy && scy <= paddle2_top + 50);
 
-// Score display parameters
-localparam SCORE_SCALE = 4; // Adjust this value to change the score size
-wire [31:0] SCORE_WIDTH = width * SCORE_SCALE;
-wire [31:0] SCORE_HEIGHT = height * SCORE_SCALE;
-
-wire score_px = (
+wire score1_px = (
     scx >= p1_starting_x && scx < p1_starting_x + SCORE_WIDTH &&
     scy >= p1_starting_y && scy < p1_starting_y + SCORE_HEIGHT &&
     pixel_map[((scx - p1_starting_x) / SCORE_SCALE) + ((scy - p1_starting_y) / SCORE_SCALE) * 8]
 );
 
-wire[2:0] pixel = (ball_px || paddle1_px || paddle2_px || score_px) ? white : black;
+wire score2_px = (
+    scx >= p2_starting_x && scx < p2_starting_x + SCORE_WIDTH &&
+    scy >= p1_starting_y && scy < p1_starting_y + SCORE_HEIGHT &&
+    pixel_map2[((scx - p2_starting_x) / SCORE_SCALE) + ((scy - p1_starting_y) / SCORE_SCALE) * 8]
+);
+
+wire[2:0] pixel = (ball_px || paddle1_px || paddle2_px || score1_px || score2_px) ? white : black;
 
 Vga display(
     .pixelClock(pixel_clk),

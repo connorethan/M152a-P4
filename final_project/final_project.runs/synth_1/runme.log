@@ -14,14 +14,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14420 
+INFO: Helper process launched with PID 3488 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.129 ; gain = 99.477
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.141 ; gain = 99.027
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'pong' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:23]
-	Parameter p1_starting_x bound to: 105'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010100000 
-	Parameter p1_starting_y bound to: 105'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000 
+INFO: [Synth 8-6157] synthesizing module 'pong' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:3]
 	Parameter SCORE_SCALE bound to: 4 - type: integer 
+	Parameter p1_starting_x bound to: 105'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001101010 
+	Parameter p1_starting_y bound to: 105'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000 
+	Parameter p2_starting_x bound to: 105'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000010010 
 INFO: [Synth 8-6157] synthesizing module 'nes_controller' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/controller.v:3]
 	Parameter latch_en bound to: 4'b0000 
 	Parameter read_data bound to: 4'b0001 
@@ -46,14 +47,14 @@ INFO: [Synth 8-6157] synthesizing module 'game_logic' [C:/Users/Student/Desktop/
 	Parameter PADDLE_X2 bound to: 56000 - type: integer 
 	Parameter PADDLE_HALF_HEIGHT bound to: 2500 - type: integer 
 	Parameter MAX_SCORE bound to: 6 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element p2_score_reg was removed.  [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:81]
 INFO: [Synth 8-6155] done synthesizing module 'game_logic' (3#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:1]
 INFO: [Synth 8-6157] synthesizing module 'clock25mhz' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/clock25_mhz.v:23]
 	Parameter DIVIDE_BY bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'clock25mhz' (4#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/clock25_mhz.v:23]
 INFO: [Synth 8-6157] synthesizing module 'digit_pixel_map' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/digit_pixel_map.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'digit_pixel_map' (5#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/digit_pixel_map.v:1]
-WARNING: [Synth 8-689] width (32) of port connection 'digit_index' does not match port width (4) of module 'digit_pixel_map' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:80]
+WARNING: [Synth 8-689] width (32) of port connection 'digit_index' does not match port width (4) of module 'digit_pixel_map' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:69]
+WARNING: [Synth 8-689] width (32) of port connection 'digit_index' does not match port width (4) of module 'digit_pixel_map' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:76]
 INFO: [Synth 8-6157] synthesizing module 'Vga' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/vga.v:1]
 	Parameter hVisiblePixels bound to: 16'b0000001010000000 
 	Parameter hBackPorchPixels bound to: 8'b00010000 
@@ -66,9 +67,9 @@ INFO: [Synth 8-6157] synthesizing module 'Vga' [C:/Users/Student/Desktop/ConnorR
 	Parameter vFrontPorchLines bound to: 8'b00001010 
 	Parameter vTotalLines bound to: 16'b0000001000001101 
 INFO: [Synth 8-6155] done synthesizing module 'Vga' (6#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/vga.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'pong' (7#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pong' (7#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.945 ; gain = 154.293
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.500 ; gain = 154.387
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -81,10 +82,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.945 ; gain = 154.293
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.500 ; gain = 154.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.945 ; gain = 154.293
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.500 ; gain = 154.387
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -178,31 +179,31 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 744.152 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 745.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 744.152 ; gain = 487.500
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 745.348 ; gain = 488.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 744.152 ; gain = 487.500
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 745.348 ; gain = 488.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 744.152 ; gain = 487.500
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 745.348 ; gain = 488.234
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "latch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nes_clk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:36]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:38]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:37]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:39]
 INFO: [Synth 8-5544] ROM "velY" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "velY" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 744.152 ; gain = 487.500
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 745.348 ; gain = 488.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -215,12 +216,13 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    105 Bit       Adders := 2     
+	   2 Input    105 Bit       Adders := 3     
 	   2 Input     32 Bit       Adders := 23    
+	   3 Input     17 Bit       Adders := 2     
 	   2 Input     16 Bit       Adders := 2     
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
-	   3 Input      7 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
 +---Registers : 
 	               32 Bit    Registers := 5     
 	               16 Bit    Registers := 2     
@@ -249,9 +251,10 @@ Hierarchical RTL Component report
 Module pong 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    105 Bit       Adders := 2     
+	   2 Input    105 Bit       Adders := 3     
 	   2 Input     32 Bit       Adders := 8     
-	   3 Input      7 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 2     
 Module clock60hz 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -383,7 +386,7 @@ WARNING: [Synth 8-3332] Sequential element (display/visibleArea_reg) is unused a
 INFO: [Synth 8-3886] merging instance 'display/GREEN_reg' (FD) to 'display/BLUE_reg'
 INFO: [Synth 8-3886] merging instance 'display/BLUE_reg' (FD) to 'display/RED_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 744.152 ; gain = 487.500
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 745.348 ; gain = 488.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -395,13 +398,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 746.824 ; gain = 490.172
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 749.820 ; gain = 492.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 749.586 ; gain = 492.934
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 752.762 ; gain = 495.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -422,7 +425,7 @@ WARNING: [Synth 8-3332] Sequential element (controller/state_reg[2]) is unused a
 WARNING: [Synth 8-3332] Sequential element (game/extra_speed_reg[1]) is unused and will be removed from module pong.
 WARNING: [Synth 8-3332] Sequential element (game/extra_speed_reg[0]) is unused and will be removed from module pong.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 799.344 ; gain = 542.691
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 805.293 ; gain = 548.180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -446,7 +449,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.344 ; gain = 542.691
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 805.293 ; gain = 548.180
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -459,7 +462,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.344 ; gain = 542.691
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 805.293 ; gain = 548.180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -471,25 +474,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.344 ; gain = 542.691
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 805.293 ; gain = 548.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.344 ; gain = 542.691
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 805.293 ; gain = 548.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.344 ; gain = 542.691
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 805.293 ; gain = 548.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.344 ; gain = 542.691
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 805.293 ; gain = 548.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -506,40 +509,38 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |   487|
-|3     |LUT1   |   181|
-|4     |LUT2   |   531|
-|5     |LUT3   |   568|
-|6     |LUT4   |   601|
-|7     |LUT5   |   553|
-|8     |LUT6   |   427|
-|9     |MUXF7  |     2|
-|10    |MUXF8  |     1|
-|11    |FDRE   |   373|
-|12    |FDSE   |     4|
-|13    |IBUF   |     4|
-|14    |OBUF   |    15|
+|2     |CARRY4 |   498|
+|3     |LUT1   |   215|
+|4     |LUT2   |   530|
+|5     |LUT3   |   573|
+|6     |LUT4   |   606|
+|7     |LUT5   |   558|
+|8     |LUT6   |   447|
+|9     |FDRE   |   377|
+|10    |FDSE   |     4|
+|11    |IBUF   |     4|
+|12    |OBUF   |    15|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+----------------+---------------+------+
 |      |Instance        |Module         |Cells |
 +------+----------------+---------------+------+
-|1     |top             |               |  3749|
+|1     |top             |               |  3829|
 |2     |  controller    |nes_controller |   139|
 |3     |    clk60hz     |clock60hz      |    62|
-|4     |  display       |Vga            |   383|
-|5     |  game          |game_logic     |  3154|
+|4     |  display       |Vga            |   423|
+|5     |  game          |game_logic     |  3183|
 |6     |  pixel_clk_div |clock25mhz     |    41|
 +------+----------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.344 ; gain = 542.691
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 805.293 ; gain = 548.180
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 799.344 ; gain = 209.484
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 799.344 ; gain = 542.691
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 805.293 ; gain = 214.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 805.293 ; gain = 548.180
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 494 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 502 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'pong' is not ideal for floorplanning, since the cellview 'game_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -550,9 +551,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 98 Infos, 42 Warnings, 26 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 799.344 ; gain = 555.715
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 805.293 ; gain = 560.867
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.runs/synth_1/pong.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file pong_utilization_synth.rpt -pb pong_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 799.344 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Mar  8 17:43:03 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 805.293 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  8 17:55:46 2024...

@@ -10,7 +10,8 @@ module game_logic(
     output wire [31:0] paddle2_x,
     output wire [31:0] paddle2_top,
     output wire [31:0] paddle2_bottom,
-    output wire [31:0] digit_index
+    output wire [31:0] digit_index1,
+    output wire [31:0] digit_index2
 );
 
 localparam X_MAX = 64_000, Y_MAX = 48_000;
@@ -49,7 +50,8 @@ assign paddle1_bottom = paddle1_low / 100;
 assign paddle2_x = PADDLE_X2 / 100;
 assign paddle2_top = paddle2_high / 100;
 assign paddle2_bottom = paddle2_low / 100;
-assign digit_index = p1_score;
+assign digit_index1 = p1_score;
+assign digit_index2 = p2_score;
 
 always @(posedge gameclk) begin
     if (ball_tick_count_y + extra_speed >= ball_tick_max_y) begin
