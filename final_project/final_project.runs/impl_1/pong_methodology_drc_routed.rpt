@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Mar  5 16:25:22 2024
+| Date         : Fri Mar  8 17:21:00 2024
 | Host         : CS152A-12 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file pong_methodology_drc_routed.rpt -pb pong_methodology_drc_routed.pb -rpx pong_methodology_drc_routed.rpx
 | Design       : pong
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 251
+             Violations found: 407
 +-----------+----------+-----------------------------+------------+
 | Rule      | Severity | Description                 | Violations |
 +-----------+----------+-----------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell | 251        |
+| TIMING-17 | Warning  | Non-clocked sequential cell | 407        |
 +-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
@@ -969,320 +969,1100 @@ Related violations: <none>
 
 TIMING-17#188 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[0]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#189 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[10]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#190 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[11]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#191 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[12]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#192 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[13]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#193 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[14]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#194 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[15]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#195 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[16]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#196 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[17]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#197 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[18]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#198 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[19]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#199 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[1]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#200 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[20]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#201 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[21]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#202 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[22]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#203 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[23]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#204 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[24]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#205 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[25]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#206 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[26]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#207 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[27]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#208 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[28]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#209 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[29]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#210 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[2]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#211 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[30]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#212 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[31]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#213 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[3]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#214 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[4]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#215 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[5]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#216 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[6]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#217 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[7]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#218 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[8]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#219 Warning
 Non-clocked sequential cell  
-The clock pin game/ball_tick_count_reg[9]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_x_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#220 Warning
 Non-clocked sequential cell  
-The clock pin game/velX_reg[0]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#221 Warning
 Non-clocked sequential cell  
-The clock pin game/velX_reg[11]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#222 Warning
 Non-clocked sequential cell  
-The clock pin game/velY_reg[0]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#223 Warning
 Non-clocked sequential cell  
-The clock pin game/velY_reg[31]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#224 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[0]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#225 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[10]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#226 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[11]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#227 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[12]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#228 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[13]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#229 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[14]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#230 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[15]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#231 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[16]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#232 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[17]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#233 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[18]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#234 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[19]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#235 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[1]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#236 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[20]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#237 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[21]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#238 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[22]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#239 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[23]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#240 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[24]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#241 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[25]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#242 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[26]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#243 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[2]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#244 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[3]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#245 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[4]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#246 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[5]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#247 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[6]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#248 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[7]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#249 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[8]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#250 Warning
 Non-clocked sequential cell  
-The clock pin pixel_clk_div/counter_reg[9]/C is not reached by a timing clock
+The clock pin game/ball_tick_count_y_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#251 Warning
+Non-clocked sequential cell  
+The clock pin game/ball_tick_count_y_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#252 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#253 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#254 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#255 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#256 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#257 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#258 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#259 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#260 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#261 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#262 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#263 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#264 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#265 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#266 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#267 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#268 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#269 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#270 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#271 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#272 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#273 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#274 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#275 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#276 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#277 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#278 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#279 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#280 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#281 Warning
+Non-clocked sequential cell  
+The clock pin game/extra_speed_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#282 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#283 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#284 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#285 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#286 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#287 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#288 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#289 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#290 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#291 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#292 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#293 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#294 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#295 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#296 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#297 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#298 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#299 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#300 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#301 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#302 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#303 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#304 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#305 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#306 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#307 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#308 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#309 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#310 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#311 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#312 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#313 Warning
+Non-clocked sequential cell  
+The clock pin game/p1_score_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#314 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#315 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#316 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#317 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#318 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#319 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#320 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#321 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#322 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#323 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#324 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#325 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#326 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#327 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#328 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#329 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#330 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#331 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#332 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#333 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#334 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#335 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#336 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#337 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#338 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#339 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#340 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#341 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#342 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#343 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#344 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#345 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_tick_count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#346 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#347 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#348 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#349 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#350 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#351 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#352 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#353 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#354 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#355 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#356 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#357 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#358 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#359 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#360 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#361 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#362 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#363 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#364 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#365 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#366 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#367 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#368 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#369 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#370 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#371 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#372 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#373 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#374 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#375 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#376 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#377 Warning
+Non-clocked sequential cell  
+The clock pin game/paddle_y_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#378 Warning
+Non-clocked sequential cell  
+The clock pin game/velX_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#379 Warning
+Non-clocked sequential cell  
+The clock pin game/velY_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#380 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#381 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#382 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#383 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#384 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#385 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#386 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#387 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#388 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#389 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#390 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#391 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#392 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#393 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#394 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#395 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#396 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#397 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#398 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#399 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#400 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#401 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#402 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#403 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#404 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#405 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#406 Warning
+Non-clocked sequential cell  
+The clock pin pixel_clk_div/counter_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#407 Warning
 Non-clocked sequential cell  
 The clock pin pixel_clk_div/enable_reg/C is not reached by a timing clock
 Related violations: <none>

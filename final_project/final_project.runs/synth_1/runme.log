@@ -14,32 +14,45 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9240 
+INFO: Helper process launched with PID 12888 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.176 ; gain = 98.895
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.152 ; gain = 99.168
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'pong' [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/pong.v:23]
-INFO: [Synth 8-6157] synthesizing module 'nes_controller' [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pong' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:23]
+	Parameter p1_starting_x bound to: 105'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001101010 
+	Parameter p1_starting_y bound to: 105'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000 
+	Parameter SCORE_SCALE bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'nes_controller' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/controller.v:3]
 	Parameter latch_en bound to: 4'b0000 
 	Parameter read_data bound to: 4'b0001 
 	Parameter null_state bound to: 4'b0010 
 	Parameter clk12us bound to: 1200 - type: integer 
 	Parameter clk6us bound to: 600 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clock60hz' [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/clock60hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock60hz' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/clock60hz.v:23]
 	Parameter DIVIDE_BY bound to: 1666666 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'clock60hz' (1#1) [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/clock60hz.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'nes_controller' (2#1) [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/controller.v:3]
-INFO: [Synth 8-6157] synthesizing module 'game_logic' [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/game_logic.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clock60hz' (1#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/clock60hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'nes_controller' (2#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'game_logic' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:1]
 	Parameter X_MAX bound to: 64000 - type: integer 
 	Parameter Y_MAX bound to: 48000 - type: integer 
 	Parameter BALL_START_X bound to: 32000 - type: integer 
 	Parameter BALL_START_Y bound to: 24000 - type: integer 
+	Parameter BALL_HALF_WIDTH bound to: 500 - type: integer 
+	Parameter LEFT_BORDER bound to: 500 - type: integer 
+	Parameter RIGHT_BORDER bound to: 63500 - type: integer 
+	Parameter TOP_BORDER bound to: 500 - type: integer 
+	Parameter BOTTOM_BORDER bound to: 47500 - type: integer 
 	Parameter PADDLE_X bound to: 8000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'game_logic' (3#1) [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/game_logic.v:1]
-INFO: [Synth 8-6157] synthesizing module 'clock25mhz' [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/clock25_mhz.v:23]
+	Parameter PADDLE_HALF_HEIGHT bound to: 2500 - type: integer 
+	Parameter MAX_SCORE bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'game_logic' (3#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock25mhz' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/clock25_mhz.v:23]
 	Parameter DIVIDE_BY bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'clock25mhz' (4#1) [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/clock25_mhz.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Vga' [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/vga.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clock25mhz' (4#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/clock25_mhz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'digit_pixel_map' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/digit_pixel_map.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'digit_pixel_map' (5#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/digit_pixel_map.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'digit_index' does not match port width (4) of module 'digit_pixel_map' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:76]
+INFO: [Synth 8-6157] synthesizing module 'Vga' [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/vga.v:1]
 	Parameter hVisiblePixels bound to: 16'b0000001010000000 
 	Parameter hBackPorchPixels bound to: 8'b00010000 
 	Parameter hSyncPixels bound to: 8'b01100000 
@@ -50,18 +63,10 @@ INFO: [Synth 8-6157] synthesizing module 'Vga' [C:/Users/Student/Desktop/ConnorR
 	Parameter vSyncLines bound to: 8'b00000010 
 	Parameter vFrontPorchLines bound to: 8'b00001010 
 	Parameter vTotalLines bound to: 16'b0000001000001101 
-INFO: [Synth 8-6155] done synthesizing module 'Vga' (5#1) [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/vga.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'pong' (6#1) [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/pong.v:23]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[7]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[6]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[5]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[4]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[3]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[2]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[1]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[0]
+INFO: [Synth 8-6155] done synthesizing module 'Vga' (6#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/vga.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pong' (7#1) [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.703 ; gain = 154.422
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.855 ; gain = 153.871
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -74,127 +79,128 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.703 ; gain = 154.422
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.855 ; gain = 153.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.703 ; gain = 154.422
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.855 ; gain = 153.871
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc]
-WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:46]
+Parsing XDC File [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:52]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:53]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[6]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'sseg[6]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:71]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[6]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'sseg[6]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:72]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[5]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'sseg[5]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:73]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[5]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'sseg[5]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:74]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[4]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'sseg[4]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:75]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[4]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'sseg[4]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:76]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[3]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'sseg[3]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:77]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[3]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'sseg[3]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:78]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[2]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'sseg[2]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:79]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[2]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:74]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'sseg[2]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:80]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[1]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'sseg[1]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:81]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[1]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'sseg[1]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:82]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[0]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'sseg[0]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:83]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[0]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'sseg[0]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:84]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[7]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:80]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'sseg[7]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:86]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sseg[7]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:81]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'sseg[7]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:87]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:83]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:89]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:84]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:90]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:91]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:92]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:93]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:94]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:95]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc:96]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pong_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pong_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/pong_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 740.273 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 743.023 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 740.273 ; gain = 482.992
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 743.023 ; gain = 486.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 740.273 ; gain = 482.992
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 743.023 ; gain = 486.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 740.273 ; gain = 482.992
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 743.023 ; gain = 486.039
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "latch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nes_clk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5545] ROM "ball_tick_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "ballX" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "velY" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v:42]
+INFO: [Synth 8-5544] ROM "velY" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "velY" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "velX" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 740.273 ; gain = 482.992
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 743.023 ; gain = 486.039
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,26 +213,31 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 9     
+	   2 Input    105 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 14    
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 2     
 	   2 Input     16 Bit       Adders := 2     
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 2     
 	               16 Bit    Registers := 2     
 	               11 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 11    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
 	   3 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
 	   2 Input     11 Bit        Muxes := 6     
+	   3 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 6     
 	   2 Input      4 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 13    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -237,7 +248,10 @@ Hierarchical RTL Component report
 Module pong 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input    105 Bit       Adders := 2     
 	   2 Input     32 Bit       Adders := 6     
+	   3 Input     17 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 1     
 Module clock60hz 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -261,14 +275,16 @@ Detailed RTL Component Info :
 Module game_logic 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
 	   3 Input     32 Bit        Muxes := 2     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module clock25mhz 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -296,20 +312,38 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5545] ROM "ball_tick_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "ballX" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "velY" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element display/vSyncStart_reg was removed.  [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/vga.v:75]
-WARNING: [Synth 8-6014] Unused sequential element display/visibleArea_reg was removed.  [C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.srcs/sources_1/new/vga.v:48]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[7]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[6]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[5]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[4]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[3]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[2]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[1]
-WARNING: [Synth 8-3331] design game_logic has unconnected port button[0]
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[30]' (FDRE) to 'game/velX_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[31]' (FDRE) to 'game/velX_reg[29]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[29]' (FDRE) to 'game/velX_reg[28]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[28]' (FDRE) to 'game/velX_reg[27]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[27]' (FDRE) to 'game/velX_reg[26]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[26]' (FDRE) to 'game/velX_reg[25]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[25]' (FDRE) to 'game/velX_reg[24]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[24]' (FDRE) to 'game/velX_reg[23]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[23]' (FDRE) to 'game/velX_reg[22]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[22]' (FDRE) to 'game/velX_reg[21]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[21]' (FDRE) to 'game/velX_reg[20]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[20]' (FDRE) to 'game/velX_reg[19]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[19]' (FDRE) to 'game/velX_reg[18]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[18]' (FDRE) to 'game/velX_reg[17]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[17]' (FDRE) to 'game/velX_reg[16]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[16]' (FDRE) to 'game/velX_reg[15]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[15]' (FDRE) to 'game/velX_reg[14]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[14]' (FDRE) to 'game/velX_reg[13]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[13]' (FDRE) to 'game/velX_reg[12]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[12]' (FDRE) to 'game/velX_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (game/\velX_reg[0] )
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[1]' (FDRE) to 'game/velX_reg[2]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[2]' (FDRE) to 'game/velX_reg[3]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[3]' (FDRE) to 'game/velX_reg[4]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[4]' (FDRE) to 'game/velX_reg[5]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[5]' (FDRE) to 'game/velX_reg[6]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[6]' (FDRE) to 'game/velX_reg[7]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[7]' (FDRE) to 'game/velX_reg[8]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[8]' (FDRE) to 'game/velX_reg[9]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[9]' (FDRE) to 'game/velX_reg[10]'
+INFO: [Synth 8-3886] merging instance 'game/velX_reg[10]' (FDRE) to 'game/velX_reg[11]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (game/\velY_reg[0] )
 INFO: [Synth 8-3886] merging instance 'game/velY_reg[1]' (FDRE) to 'game/velY_reg[2]'
 INFO: [Synth 8-3886] merging instance 'game/velY_reg[2]' (FDRE) to 'game/velY_reg[3]'
 INFO: [Synth 8-3886] merging instance 'game/velY_reg[3]' (FDRE) to 'game/velY_reg[4]'
@@ -340,40 +374,16 @@ INFO: [Synth 8-3886] merging instance 'game/velY_reg[27]' (FDRE) to 'game/velY_r
 INFO: [Synth 8-3886] merging instance 'game/velY_reg[28]' (FDRE) to 'game/velY_reg[29]'
 INFO: [Synth 8-3886] merging instance 'game/velY_reg[29]' (FDRE) to 'game/velY_reg[30]'
 INFO: [Synth 8-3886] merging instance 'game/velY_reg[30]' (FDRE) to 'game/velY_reg[31]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[31]' (FDRE) to 'game/velX_reg[30]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[30]' (FDRE) to 'game/velX_reg[28]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[28]' (FDRE) to 'game/velX_reg[29]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[29]' (FDRE) to 'game/velX_reg[24]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[24]' (FDRE) to 'game/velX_reg[25]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[25]' (FDRE) to 'game/velX_reg[26]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[26]' (FDRE) to 'game/velX_reg[27]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[27]' (FDRE) to 'game/velX_reg[22]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[22]' (FDRE) to 'game/velX_reg[23]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[23]' (FDRE) to 'game/velX_reg[16]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[16]' (FDRE) to 'game/velX_reg[17]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[17]' (FDRE) to 'game/velX_reg[18]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[18]' (FDRE) to 'game/velX_reg[19]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[19]' (FDRE) to 'game/velX_reg[20]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[20]' (FDRE) to 'game/velX_reg[21]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[21]' (FDRE) to 'game/velX_reg[14]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[14]' (FDRE) to 'game/velX_reg[15]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[15]' (FDRE) to 'game/velX_reg[12]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[12]' (FDRE) to 'game/velX_reg[13]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[13]' (FDRE) to 'game/velX_reg[1]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[1]' (FDRE) to 'game/velX_reg[2]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[2]' (FDRE) to 'game/velX_reg[3]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[3]' (FDRE) to 'game/velX_reg[4]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[4]' (FDRE) to 'game/velX_reg[5]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[5]' (FDRE) to 'game/velX_reg[6]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[6]' (FDRE) to 'game/velX_reg[7]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[7]' (FDRE) to 'game/velX_reg[8]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[8]' (FDRE) to 'game/velX_reg[9]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[9]' (FDRE) to 'game/velX_reg[10]'
-INFO: [Synth 8-3886] merging instance 'game/velX_reg[10]' (FDRE) to 'game/velX_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game/i_0/\extra_speed_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game/i_0/\extra_speed_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (velX_reg[0]) is unused and will be removed from module game_logic.
+WARNING: [Synth 8-3332] Sequential element (velY_reg[0]) is unused and will be removed from module game_logic.
+WARNING: [Synth 8-3332] Sequential element (display/vSyncStart_reg) is unused and will be removed from module pong.
+WARNING: [Synth 8-3332] Sequential element (display/visibleArea_reg) is unused and will be removed from module pong.
 INFO: [Synth 8-3886] merging instance 'display/GREEN_reg' (FD) to 'display/BLUE_reg'
 INFO: [Synth 8-3886] merging instance 'display/BLUE_reg' (FD) to 'display/RED_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 740.273 ; gain = 482.992
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 743.023 ; gain = 486.039
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -385,13 +395,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 742.293 ; gain = 485.012
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 745.961 ; gain = 488.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 743.809 ; gain = 486.527
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 748.617 ; gain = 491.633
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -410,7 +420,7 @@ WARNING: [Synth 8-3332] Sequential element (controller/button_index_reg[3]) is u
 WARNING: [Synth 8-3332] Sequential element (controller/state_reg[3]) is unused and will be removed from module pong.
 WARNING: [Synth 8-3332] Sequential element (controller/state_reg[2]) is unused and will be removed from module pong.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 779.516 ; gain = 522.234
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 795.188 ; gain = 538.203
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -434,7 +444,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 779.516 ; gain = 522.234
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 795.188 ; gain = 538.203
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -447,7 +457,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 779.516 ; gain = 522.234
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 795.188 ; gain = 538.203
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -459,25 +469,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 779.516 ; gain = 522.234
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 795.188 ; gain = 538.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 779.516 ; gain = 522.234
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 795.188 ; gain = 538.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 779.516 ; gain = 522.234
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 795.188 ; gain = 538.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 779.516 ; gain = 522.234
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 795.188 ; gain = 538.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -494,16 +504,16 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |   266|
-|3     |LUT1   |    55|
-|4     |LUT2   |   376|
-|5     |LUT3   |   362|
-|6     |LUT4   |   342|
-|7     |LUT5   |   276|
-|8     |LUT6   |   198|
-|9     |FDRE   |   248|
-|10    |FDSE   |     1|
-|11    |IBUF   |     2|
+|2     |CARRY4 |   464|
+|3     |LUT1   |   150|
+|4     |LUT2   |   535|
+|5     |LUT3   |   486|
+|6     |LUT4   |   516|
+|7     |LUT5   |   386|
+|8     |LUT6   |   352|
+|9     |FDRE   |   401|
+|10    |FDSE   |     4|
+|11    |IBUF   |     4|
 |12    |OBUF   |    15|
 +------+-------+------+
 
@@ -511,33 +521,34 @@ Report Instance Areas:
 +------+----------------+---------------+------+
 |      |Instance        |Module         |Cells |
 +------+----------------+---------------+------+
-|1     |top             |               |  2143|
+|1     |top             |               |  3315|
 |2     |  controller    |nes_controller |   139|
 |3     |    clk60hz     |clock60hz      |    62|
-|4     |  display       |Vga            |   288|
-|5     |  game          |game_logic     |  1656|
+|4     |  display       |Vga            |   359|
+|5     |  game          |game_logic     |  2752|
 |6     |  pixel_clk_div |clock25mhz     |    41|
 +------+----------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 779.516 ; gain = 522.234
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 795.188 ; gain = 538.203
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 779.516 ; gain = 193.664
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 779.516 ; gain = 522.234
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 795.188 ; gain = 206.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 795.188 ; gain = 538.203
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 268 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 468 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'pong' is not ideal for floorplanning, since the cellview 'game_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-95 Infos, 51 Warnings, 26 Critical Warnings and 0 Errors encountered.
+98 Infos, 39 Warnings, 26 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 779.516 ; gain = 534.973
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 795.188 ; gain = 551.121
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.runs/synth_1/pong.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.runs/synth_1/pong.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file pong_utilization_synth.rpt -pb pong_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 779.516 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Mar  5 16:24:22 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 795.188 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  8 17:19:55 2024...

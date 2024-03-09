@@ -36,11 +36,11 @@ reg[31:0] extra_speed = 0;
 localparam PADDLE_X = 8_000, PADDLE_HALF_HEIGHT = 2_500;
 
 // Paddle data
-reg[31:0] paddle_y = BALL_START_Y + 10_000;
+reg[31:0] paddle_y = BALL_START_Y;
 reg[31:0] paddle_tick_count = 1, paddle_tick_max = 100_000_000 / 10_000;
 
-wire paddle_high = (paddle_y - PADDLE_HALF_HEIGHT);
-wire paddle_low = (paddle_y + PADDLE_HALF_HEIGHT);
+wire [31:0] paddle_high = (paddle_y - PADDLE_HALF_HEIGHT);
+wire [31:0] paddle_low = (paddle_y + PADDLE_HALF_HEIGHT);
 
 
 // Score
@@ -96,9 +96,7 @@ always @(posedge gameclk) begin
     
     if (paddle_tick_count + extra_speed >= paddle_tick_max) begin
         paddle_tick_count = 1;
-        if (btn_down && btn_up) begin
-            // Do nothing
-        end else if (btn_down) begin // Down
+        if (btn_down) begin // Down
             if (paddle_low < Y_MAX) begin
                 paddle_y = paddle_y + 1;
             end

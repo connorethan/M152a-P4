@@ -36,8 +36,8 @@ module pong(
 );
 
 localparam [104:0] 
-     p1_starting_x = 106,
-     p1_starting_y = 80;
+     p1_starting_x = 160,
+     p1_starting_y = 40;
 
 wire [0:79] pixel_map;
 wire [3:0] width;
@@ -91,10 +91,15 @@ wire paddle_px = (
    paddle_x - 10 <= scx && scx <= paddle_x &&
    paddle_top <= scy && scy <= paddle_top + 50);
 
+// Score display parameters
+localparam SCORE_SCALE = 4; // Adjust this value to change the score size
+wire [31:0] SCORE_WIDTH = width * SCORE_SCALE;
+wire [31:0] SCORE_HEIGHT = height * SCORE_SCALE;
+
 wire score_px = (
-    scx >= p1_starting_x && scx < p1_starting_x + width && 
-    scy >= p1_starting_y && scy < p1_starting_y + height &&
-    pixel_map[(scx - p1_starting_x) + (scy - p1_starting_y) * 8]
+    scx >= p1_starting_x && scx < p1_starting_x + SCORE_WIDTH &&
+    scy >= p1_starting_y && scy < p1_starting_y + SCORE_HEIGHT &&
+    pixel_map[((scx - p1_starting_x) / SCORE_SCALE) + ((scy - p1_starting_y) / SCORE_SCALE) * 8]
 );
 
 wire[2:0] pixel = (ball_px || paddle_px || score_px) ? white : black;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1709684627">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1709947157">
   <File Type="PA-TCL" Name="pong.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="pong_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="pong_reports.tcl"/>
@@ -32,6 +32,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/digit_pixel_map.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/game_logic.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -56,7 +63,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/controller.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/M152a-P4-main/M152a-P4-main/lab4/project_1/project_1.srcs/sources_1/new/controller.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/M152a-P4-main/M152a-P4-main/lab4/project_1/project_1.srcs/sources_1/new/controller.v"/>
         <Attr Name="ImportTime" Val="1709250150"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -66,7 +73,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/pong.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/M152a-P4-main/M152a-P4-main/lab4/project_1/project_1.srcs/sources_1/new/pong.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/M152a-P4-main/M152a-P4-main/lab4/project_1/project_1.srcs/sources_1/new/pong.v"/>
         <Attr Name="ImportTime" Val="1709250150"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

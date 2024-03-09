@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="94508a00401640369e78b32c791201bd"/>
@@ -21,7 +21,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPOutputRepo" Val="C:/Users/Student/Desktop/ConnorRonan/final_project/final_project.cache/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -60,20 +60,27 @@
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/clock25_mhz.v">
-        <FileInfo>
+        <FileInfo RelPath="clock25_mhz.v">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/clock60hz.v">
-        <FileInfo>
+        <FileInfo RelPath="clock60hz.v">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/controller.v">
+        <FileInfo RelPath="controller.v">
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/digit_pixel_map.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -81,21 +88,21 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/game_logic.v">
-        <FileInfo>
+        <FileInfo RelPath="game_logic.v">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/vga.v">
-        <FileInfo>
+        <FileInfo RelPath="vga.v">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/pong.v">
-        <FileInfo>
+        <FileInfo RelPath="pong.v">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -104,7 +111,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/controller.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/M152a-P4-main/M152a-P4-main/lab4/project_1/project_1.srcs/sources_1/new/controller.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/M152a-P4-main/M152a-P4-main/lab4/project_1/project_1.srcs/sources_1/new/controller.v"/>
           <Attr Name="ImportTime" Val="1709250150"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -114,7 +121,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/pong.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/M152a-P4-main/M152a-P4-main/lab4/project_1/project_1.srcs/sources_1/new/pong.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/M152a-P4-main/M152a-P4-main/lab4/project_1/project_1.srcs/sources_1/new/pong.v"/>
           <Attr Name="ImportTime" Val="1709250150"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
