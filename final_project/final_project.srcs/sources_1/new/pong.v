@@ -21,11 +21,12 @@ wire [3:0] width;
 wire [3:0] height;
 
 nes_controller controller(
-    .clk(clk),
-    .data(data),
-    .latch(latch),
-    .nes_clk(nes_clk),
-    .abssudlr(led)
+    .master_clock(clk),
+    .serial_data(data),
+    .data_latch(latch),
+    .data_clock(nes_clk),
+    .button_state(led),
+    .update_clock()
 );
 
 wire [31:0] ball_x, ball_y;
