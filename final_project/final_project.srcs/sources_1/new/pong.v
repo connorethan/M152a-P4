@@ -2,12 +2,14 @@
 
 module pong(
     input clk,
-    input data,
+    input data1,
+    input data2,
     input btn_down,
     input btn_up,
-    output latch,
-    output nes_clk,
-    output [7:0] led,
+    output latch1,
+    output nes_clk1,
+    output latch2,
+    output nes_clk2,
     output vsync,
     output hsync,
     output red,
@@ -19,14 +21,23 @@ wire [0:79] pixel_map;
 wire [0:79] pixel_map2;
 wire [3:0] width;
 wire [3:0] height;
+wire [7:0] buttons1;
+wire [7:0] buttons2;
 
-nes_controller controller(
-    .master_clock(clk),
-    .serial_data(data),
-    .data_latch(latch),
-    .data_clock(nes_clk),
-    .button_state(led),
-    .update_clock()
+nes_controller controller1(
+    .clk(clk),
+    .data(data1),
+    .latch(latch1),
+    .nes_clk(nes_clk1),
+    .abssudlr(buttons1)  
+);
+
+nes_controller controller2(
+    .clk(clk),
+    .data(data2),
+    .latch(latch2),
+    .nes_clk(nes_clk2),
+    .abssudlr(buttons2)  
 );
 
 wire [31:0] ball_x, ball_y;
@@ -36,8 +47,12 @@ wire [31:0] digit_index1, digit_index2;
 
 game_logic game(
     .gameclk(clk),
-    .btn_down(btn_down),
-    .btn_up(btn_up),
+    .btn_down1(buttons1[5]),
+    .btn_up1(buttons1[4]),
+    .start1(buttons1[3]),
+    .btn_down2(buttons2[5]),
+    .btn_up2(buttons2[4]),
+    .start2(buttons2[3]),
     .ball_x(ball_x),
     .ball_y(ball_y),
     .paddle1_x(paddle1_x),

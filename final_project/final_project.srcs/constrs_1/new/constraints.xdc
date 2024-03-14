@@ -54,16 +54,20 @@ set_property IOSTANDARD LVCMOS33 [get_ports rst]
 
 
 ##Pmod Header JA
-# reg
-set_property PACKAGE_PIN J1 [get_ports nes_clk]					
-	set_property IOSTANDARD LVCMOS33 [get_ports nes_clk]
-# blue
-set_property PACKAGE_PIN L1 [get_ports latch]					
-	set_property IOSTANDARD LVCMOS33 [get_ports latch]
-# green
-set_property PACKAGE_PIN J2 [get_ports data]					
-	set_property IOSTANDARD LVCMOS33 [get_ports data]
+set_property PACKAGE_PIN J1 [get_ports nes_clk1]					
+set_property IOSTANDARD LVCMOS33 [get_ports nes_clk1]
+set_property PACKAGE_PIN L2 [get_ports latch1]					
+set_property IOSTANDARD LVCMOS33 [get_ports latch1]
+set_property PACKAGE_PIN J2 [get_ports data1]					
+set_property IOSTANDARD LVCMOS33 [get_ports data1]
 
+##Pmod Header JB
+set_property PACKAGE_PIN A14 [get_ports nes_clk2]					
+set_property IOSTANDARD LVCMOS33 [get_ports nes_clk2]
+set_property PACKAGE_PIN A16 [get_ports latch2]					
+set_property IOSTANDARD LVCMOS33 [get_ports latch2]
+set_property PACKAGE_PIN B15 [get_ports data2]					
+set_property IOSTANDARD LVCMOS33 [get_ports data2]
 
 
 

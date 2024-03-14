@@ -35,6 +35,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/controller.v
   C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/digit_pixel_map.v
   C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/game_logic.v
+  C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/paddle.v
   C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/vga.v
   C:/Users/Student/Desktop/ConnorRonan/git_final_project/M152a-P4/final_project/final_project.srcs/sources_1/new/pong.v
 }

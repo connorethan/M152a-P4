@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Fri Mar  8 17:56:49 2024
+| Date             : Thu Mar 14 15:55:12 2024
 | Host             : CS152A-12 running 64-bit major release  (build 9200)
 | Command          : report_power -file pong_power_routed.rpt -pb pong_power_summary_routed.pb -rpx pong_power_routed.rpx
 | Design           : pong
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 48.744 (Junction temp exceeded!) |
-| Design Power Budget (W)  | Unspecified*                     |
-| Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 48.258                           |
-| Device Static (W)        | 0.486                            |
-| Effective TJA (C/W)      | 5.0                              |
-| Max Ambient (C)          | 0.0                              |
-| Junction Temperature (C) | 125.0                            |
-| Confidence Level         | Low                              |
-| Setting File             | ---                              |
-| Simulation Activity File | ---                              |
-| Design Nets Matched      | NA                               |
-+--------------------------+----------------------------------+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 231.627 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                      |
+| Power Budget Margin (W)  | NA                                |
+| Dynamic (W)              | 231.141                           |
+| Device Static (W)        | 0.486                             |
+| Effective TJA (C/W)      | 5.0                               |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |    24.378 |     3819 |       --- |             --- |
-|   LUT as Logic |    22.130 |     2259 |     20800 |           10.86 |
-|   CARRY4       |     2.193 |      498 |      8150 |            6.11 |
-|   Register     |     0.050 |      383 |     41600 |            0.92 |
+| Slice Logic    |   116.500 |    16842 |       --- |             --- |
+|   LUT as Logic |    99.884 |    11497 |     20800 |           55.27 |
+|   CARRY4       |    16.504 |     2940 |      8150 |           36.07 |
+|   Register     |     0.106 |      696 |     41600 |            1.67 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    23.246 |     3005 |       --- |             --- |
-| I/O            |     0.633 |       19 |       106 |           17.92 |
+|   Others       |     0.000 |       25 |       --- |             --- |
+| Signals        |   104.040 |    15227 |       --- |             --- |
+| DSPs           |     9.932 |       12 |        90 |           13.33 |
+| I/O            |     0.668 |       12 |       106 |           11.32 |
 | Static Power   |     0.486 |          |           |                 |
-| Total          |    48.744 |          |           |                 |
+| Total          |   231.627 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    47.981 |      47.640 |      0.341 |
-| Vccaux    |       1.800 |     0.076 |       0.023 |      0.053 |
-| Vcco33    |       3.300 |     0.176 |       0.175 |      0.001 |
+| Vccint    |       1.000 |   230.825 |     230.485 |      0.341 |
+| Vccaux    |       1.800 |     0.077 |       0.024 |      0.053 |
+| Vcco33    |       3.300 |     0.187 |       0.186 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,12 +139,16 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| pong            |    48.258 |
-|   controller    |     0.273 |
-|     clk60hz     |     0.062 |
-|   display       |     1.065 |
-|   game          |    46.068 |
-|   pixel_clk_div |     0.015 |
+| pong            |   231.141 |
+|   controller1   |     0.226 |
+|     clk60hz     |     0.051 |
+|   controller2   |     0.214 |
+|     clk60hz     |     0.057 |
+|   display       |     0.272 |
+|   game          |   196.101 |
+|     paddle1     |    96.682 |
+|     paddle2     |    96.489 |
+|   pixel_clk_div |     0.014 |
 +-----------------+-----------+
 
 
